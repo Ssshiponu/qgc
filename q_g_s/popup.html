@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      width: 300px;
+      height: auto;
+      min-height: 200px;
+    }
+
+    #search-container {
+      margin-bottom: 20px;
+    }
+
+    .search-message {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .search-message p {
+      margin: 5px 0;
+      color: #333;
+    }
+
+    .preview-message {
+      color: #666;
+      font-size: 0.9em;
+      padding: 10px;
+      border-left: 3px solid #007bff;
+      background: #f8f9fa;
+    }
+
+    #open-tab {
+      display: block;
+      text-align: center;
+      background: #007bff;
+      color: white;
+      padding: 12px;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #open-tab:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div id="search-container">
+    <div class="search-message">
+      <p>Select text on any webpage to search for images</p>
+    </div>
+  </div>
+  <a id="open-tab" target="_blank">Open in New Tab</a>
+  <script src="popup.js"></script>
+</body>
+</html>
